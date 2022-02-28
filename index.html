@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="Mario-icon.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <title>Mario Kart</title>
+  </head>
+
+  <body>
+    <header id="header">MARIO KART API PROJECT</header>
+    <section id="driversSection">
+      <h1 id="driversTitle">Drivers</h1>
+      <div id="driversDiv">
+        <ul id="driversInfo"></ul>
+        <div class="text">
+          Här är ett urval av förare från den hämtade datan, klicka på en förare
+          för mer info om denna.
+        </div>
+        <img id="marioImage" src="mario.png" alt="Super Mario image" />
+      </div>
+    </section>
+    <section id="raceTracksSection">
+      <h2 id="raceTracksTitle">Racetracks</h2>
+      <div id="raceTracksDiv">
+        <ul id="raceTracksInfo"></ul>
+        <div class="text">
+          Här är ett urval av racetracks från den hämtade datan, klicka på en
+          track för mer info om denna.
+        </div>
+        <img
+          id="raceImage"
+          src="Mario-Kart-Wii-Quiz-Tracks-and-Battle-Courses.png.webp"
+          alt="Race image"
+        />
+      </div>
+    </section>
+    <div id="linksDiv">
+      <a href="chartpositions.html">Länk till chart.js uppgift</a>
+      <a href="cities.html">Länk till cities uppgift</a>
+    </div>
+    <div id="dataInputDiv">
+      <input type="text" id="dataInput" placeholder="Webbstorage" />
+      <input
+        id="saveButton"
+        type="button"
+        value="Save text"
+        onclick="(webbStorage())"
+      />
+    </div>
+    <footer id="footer">Copyright © 2021, Super Mario & Donkey Kong</footer>
+  </body>
+</html>

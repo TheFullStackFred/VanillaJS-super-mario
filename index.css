@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+body {
+  background-image: linear-gradient(to right, red, rgb(0, 145, 255));
+}
+
+@font-face {
+  font-family: super;
+  src: url(SuperMario256.ttf);
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90vw;
+  border-color: #ffffff80;
+  border-width: 0.5rem;
+  border-style: solid;
+  margin-bottom: 10px;
+  font-family: super;
+  font-size: x-large;
+  align-items: center;
+}
+
+#driversSection {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90vw;
+  border-color: #ffffff80;
+  border-width: 0.5rem;
+  border-style: solid;
+}
+
+#driversDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+#driversInfo {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#marioImage {
+  width: auto;
+  height: 150px;
+}
+
+#raceTracksSection {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90vw;
+  border-color: #ffffff80;
+  border-width: 0.5rem;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+#raceTracksDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+#raceTracksInfo {
+  list-style-type: none;
+}
+
+#raceImage {
+  width: auto;
+  height: 150px;
+}
+
+#linksDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dataInputDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+@media (max-width: 700px) {
+  #driversDiv {
+    flex-direction: column-reverse;
+  }
+  #marioImage {
+    width: 50%;
+    height: auto;
+  }
+  #raceImage {
+    width: 50%;
+    height: auto;
+  }
+  #raceTracksDiv {
+    flex-direction: column-reverse;
+  }
+}

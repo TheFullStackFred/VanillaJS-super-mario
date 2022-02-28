@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cities.js" defer></script>
+    <link href="driver.css" rel="stylesheet" type="text/css">
+    <title>Cities</title>
+</head>
+
+<body>
+    <div id="inputDiv">
+        <div class="formDivs">
+            <form id="getForm">
+                <input id="get" type="text" placeholder="City-ID">
+                <input id="getButton" type="button" value="GET">
+            </form>
+        </div>
+        <div class="formDivs">
+            <form id="postForm">
+                <input id="postCity" type="text" placeholder="New City">
+                <input id="postPopulation" type="number" placeholder="Population">
+                <input id="postButton" type="button" value="POST">
+            </form>
+        </div>
+        <div class="formDivs">
+            <form id="putForm">
+                <input id="PatchId" type="text" placeholder="City Id">
+                <input id="PatchPopulation" type="number" placeholder="Population">
+                <input id="PatchButton" type="button" value="PATCH">
+            </form>
+        </div>
+        <div class="formDivs">
+            <form id="deleteForm">
+                <input id="deleteId" type="text" placeholder="City Id">
+                <input id="deleteButton" type="button" value="DELETE">
+            </form>
+        </div>
+    </div>
+    <div id="divList">
+        <ol id="citiesList"></ol>
+    </div>
+    <div id="buttonDiv">
+        <button id="homeBtn">HOME</button>
+    </div>
+</body>
+
+</html>
