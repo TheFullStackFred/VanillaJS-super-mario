@@ -2,7 +2,7 @@ fetch('https://mario-kart-tour-api.herokuapp.com/api/v1/drivers')
   .then((response) => response.json())
   .then((result) => {
     console.log(result)
-    let babymario = result[0].position
+    let babyMario = result[0].position
     let babyPeach = result[1].position
     let babyDaisy = result[2].position
     let babyRosalina = result[3].position
@@ -16,7 +16,7 @@ fetch('https://mario-kart-tour-api.herokuapp.com/api/v1/drivers')
         datasets: [
           {
             label: 'Drivers position',
-            data: [babymario, babyPeach, babyDaisy, babyRosalina],
+            data: [babyMario, babyPeach, babyDaisy, babyRosalina],
             backgroundColor: ['springgreen', 'yellow', 'purple', 'orange'],
             borderColor: ['black'],
             borderWidth: 2,
